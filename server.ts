@@ -127,6 +127,184 @@ const analysisSchema = {
   ],
 };
 
+// Candidate models in order of priority for high availability
+const CANDIDATE_MODELS = [
+  'gemini-3.1-flash-lite',
+  'gemini-flash-latest',
+  'gemini-3.8-flash',
+];
+
+function buildFallbackFeatures(natural_language: string, quick_tags: string[], hasImage: boolean) {
+  const combined = `${natural_language} ${quick_tags.join(' ')}`.toLowerCase();
+
+  // Product detection
+  const productCandidates: Array<{ value: string; confidence: number }> = [];
+  if (/鞋帶|shoelace|lace/.test(combined)) productCandidates.push({ value: 'Shoelace', confidence: 0.9 });
+  if (/鞋面|upper|針織鞋面/.test(combined)) productCandidates.push({ value: 'Knit Upper', confidence: 0.9 });
+  if (/織帶|webbing|帶/.test(combined)) productCandidates.push({ value: 'Webbing', confidence: 0.85 });
+  if (/彈力帶|鬆緊帶|elastic/.test(combined)) productCandidates.push({ value: 'Elastic Band', confidence: 0.9 });
+  if (/魔鬼氈|黏扣帶|hook|loop/.test(combined)) productCandidates.push({ value: 'Hook & Loop', confidence: 0.95 });
+  if (/緞帶|ribbon/.test(combined)) productCandidates.push({ value: 'Ribbon', confidence: 0.9 });
+  if (/繩|cord/.test(combined)) productCandidates.push({ value: 'Cord', confidence: 0.85 });
+  if (productCandidates.length === 0) {
+    productCandidates.push({ value: 'Webbing', confidence: 0.7 }, { value: 'Knit Upper', confidence: 0.6 });
+  }
+
+  // Structure detection
+  const structureCandidates: Array<{ value: string; confidence: number }> = [];
+  if (/針織|knit/.test(combined)) structureCandidates.push({ value: 'Knit', confidence: 0.95 });
+  if (/梭織|woven|平織/.test(combined)) structureCandidates.push({ value: 'Woven', confidence: 0.95 });
+  if (/編織|braid/.test(combined)) structureCandidates.push({ value: 'Braided', confidence: 0.95 });
+  if (/射出|molded|模壓/.test(combined)) structureCandidates.push({ value: 'Molded', confidence: 0.95 });
+  if (structureCandidates.length === 0) {
+    structureCandidates.push({ value: 'Knit', confidence: 0.65 }, { value: 'Woven', confidence: 0.65 });
+  }
+
+  // Visual features
+  const visualFeatures: string[] = [];
+  if (/網孔|mesh/.test(combined)) visualFeatures.push('Mesh');
+  if (/緹花|jacquard/.test(combined)) visualFeatures.push('Jacquard');
+  if (/羅紋|rib/.test(combined)) visualFeatures.push('Rib');
+  if (/平紋|plain/.test(combined)) visualFeatures.push('Plain Weave');
+  if (/細紋|細緻|fine/.test(combined)) visualFeatures.push('Fine Texture');
+  if (/粗獷|coarse/.test(combined)) visualFeatures.push('Coarse');
+  if (visualFeatures.length === 0) visualFeatures.push('Fine Texture');
+
+  // Color
+  let primaryColor = 'Black';
+  let colorOverride: string | null = null;
+  let ignoreColor = false;
+  if (/白色|white/.test(combined)) {
+    primaryColor = 'White';
+    colorOverride = 'White';
+  } else if (/黑色|black/.test(combined)) {
+    primaryColor = 'Black';
+    colorOverride = 'Black';
+  } else if (/藍色|blue/.test(combined)) {
+    primaryColor = 'Blue';
+    colorOverride = 'Blue';
+  } else if (/灰色|gray|grey/.test(combined)) {
+    primaryColor = 'Gray';
+    colorOverride = 'Gray';
+  } else if (/綠色|green/.test(combined)) {
+    primaryColor = 'Green';
+    colorOverride = 'Green';
+  } else if (/紅色|red/.test(combined)) {
+    primaryColor = 'Red';
+    colorOverride = 'Red';
+  }
+  if (/不限顏色|顏色不拘|任意顏色|不拘|ignore color/.test(combined)) {
+    ignoreColor = true;
+  }
+
+  // Functions
+  const possibleFunctions: Array<{ value: string; confidence: number; inferred: boolean }> = [];
+  if (/透氣|breathable/.test(combined)) possibleFunctions.push({ value: 'Breathable', confidence: 0.9, inferred: true });
+  if (/彈性|stretch|elastic/.test(combined)) possibleFunctions.push({ value: 'Stretch', confidence: 0.9, inferred: true });
+  if (/反光|reflective/.test(combined)) possibleFunctions.push({ value: 'Reflective', confidence: 0.9, inferred: true });
+  if (/輕量|lightweight/.test(combined)) possibleFunctions.push({ value: 'Lightweight', confidence: 0.85, inferred: true });
+  if (/耐磨|abrasion/.test(combined)) possibleFunctions.push({ value: 'Abrasion Resistant', confidence: 0.85, inferred: true });
+  if (/柔軟|soft/.test(combined)) possibleFunctions.push({ value: 'Soft', confidence: 0.85, inferred: true });
+  if (/回收|環保|recycled/.test(combined)) possibleFunctions.push({ value: 'Recycled', confidence: 0.95, inferred: true });
+  if (possibleFunctions.length === 0) {
+    possibleFunctions.push({ value: 'Breathable', confidence: 0.7, inferred: true });
+  }
+
+  // Applications
+  const applicationCandidates: string[] = [];
+  if (/鞋|footwear|shoe/.test(combined)) applicationCandidates.push('Footwear');
+  if (/鞋面|upper/.test(combined)) applicationCandidates.push('Footwear Upper');
+  if (/鞋帶|shoelace/.test(combined)) applicationCandidates.push('Shoelace');
+  if (/成衣|apparel|衣服|服裝/.test(combined)) applicationCandidates.push('Apparel');
+  if (/包|bag|背包/.test(combined)) applicationCandidates.push('Bags');
+  if (applicationCandidates.length === 0) applicationCandidates.push('Footwear', 'Apparel');
+
+  // Search keywords
+  const searchKeywords = Array.from(new Set([
+    ...productCandidates.map(p => p.value),
+    ...structureCandidates.map(s => s.value),
+    ...visualFeatures,
+    ...possibleFunctions.map(f => f.value),
+    primaryColor,
+  ]));
+
+  return {
+    product_candidates: productCandidates,
+    structure_candidates: structureCandidates,
+    visual_features: visualFeatures,
+    color: {
+      primary: primaryColor,
+      secondary: null,
+      confidence: 0.8,
+    },
+    surface: {
+      texture: visualFeatures[0] || 'Fine Texture',
+      gloss: 'Matte',
+      pattern: visualFeatures[0] || 'Plain',
+    },
+    possible_functions: possibleFunctions,
+    application_candidates: applicationCandidates,
+    search_keywords: searchKeywords,
+    intent_notes: {
+      color_override: colorOverride,
+      ignore_color: ignoreColor,
+      product_emphasis: productCandidates[0]?.value || null,
+      user_query_summary: natural_language || quick_tags.join(', ') || '樣品材料搜尋',
+    },
+  };
+}
+
+// Helper: Call Gemini with fallback models and retry on 503 / 429
+async function generateContentWithFallback(contentsParts: any[]) {
+  let lastError: any = null;
+
+  for (const model of CANDIDATE_MODELS) {
+    try {
+      console.log(`[AI Analyze] Attempting analysis with model: ${model}`);
+      const response = await ai!.models.generateContent({
+        model,
+        contents: { parts: contentsParts },
+        config: {
+          responseMimeType: 'application/json',
+          responseSchema: analysisSchema,
+          systemInstruction:
+            'You are a professional textile inspection AI assistant for Paiho Material Finder. You output strict JSON without markdown formatting or pleasantries.',
+        },
+      });
+
+      const responseText = response.text || '{}';
+      const parsedFeatures = JSON.parse(responseText);
+      console.log(`[AI Analyze] Successfully analyzed with ${model}`);
+      return { features: parsedFeatures, modelUsed: model };
+    } catch (err: any) {
+      console.warn(`[AI Analyze] Model ${model} encountered issue:`, err?.message || err);
+      lastError = err;
+
+      const isHighDemandOrRateLimit =
+        err?.message?.includes('503') ||
+        err?.message?.includes('429') ||
+        err?.message?.includes('high demand') ||
+        err?.message?.includes('UNAVAILABLE');
+
+      if (isHighDemandOrRateLimit) {
+        // Brief pause before trying fallback model
+        await new Promise((r) => setTimeout(r, 400));
+        continue;
+      }
+
+      // Check if not found (404)
+      if (err?.message?.includes('404') || err?.message?.includes('NOT_FOUND')) {
+        continue;
+      }
+
+      // If other errors, also try next model
+      continue;
+    }
+  }
+
+  throw lastError || new Error('所有可用 AI 模型目前暫時無法連線。');
+}
+
 // API route: analyze image & user requirements
 app.post('/api/analyze', async (req, res) => {
   try {
@@ -139,8 +317,13 @@ app.post('/api/analyze', async (req, res) => {
     }
 
     if (!ai) {
-      return res.status(500).json({
-        error: '系統尚未設定 GEMINI_API_KEY。請在 Secrets 面板中設定金鑰。',
+      // If no API key configured, use fallback features gracefully
+      const fallbackFeatures = buildFallbackFeatures(natural_language, quick_tags, !!image);
+      return res.json({
+        features: fallbackFeatures,
+        search_id: `SRCH_HEURISTIC_${Date.now()}`,
+        fallback: true,
+        notice: '系統尚未設定 GEMINI_API_KEY，已自動採用智慧規則比對特徵。',
       });
     }
 
@@ -196,30 +379,48 @@ CRITICAL INSTRUCTIONS:
 
     contentsParts.push({ text: promptText });
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-3.8-flash',
-      contents: { parts: contentsParts },
-      config: {
-        responseMimeType: 'application/json',
-        responseSchema: analysisSchema,
-        systemInstruction:
-          'You are a professional textile inspection AI assistant for Paiho Material Finder. You output strict JSON without markdown formatting or pleasantries.',
-      },
-    });
-
-    const responseText = response.text || '{}';
-    const parsedFeatures = JSON.parse(responseText);
-
-    return res.json({
-      features: parsedFeatures,
-      search_id: `SRCH_${Date.now()}`,
-    });
+    try {
+      const { features, modelUsed } = await generateContentWithFallback(contentsParts);
+      return res.json({
+        features,
+        search_id: `SRCH_${Date.now()}`,
+        model_used: modelUsed,
+      });
+    } catch (aiError: any) {
+      console.warn('[AI Analyze] All AI models temporarily unavailable. Using heuristic fallback:', aiError);
+      // Fallback gracefully so user's search is never broken by Google 503 high demand spike!
+      const fallbackFeatures = buildFallbackFeatures(natural_language, quick_tags, !!image);
+      return res.json({
+        features: fallbackFeatures,
+        search_id: `SRCH_HEURISTIC_${Date.now()}`,
+        fallback: true,
+        notice: '目前 AI 模型處於高負載繁忙狀態，已自動啟用備援解析特徵為您完成搜尋。',
+      });
+    }
   } catch (error: any) {
     console.error('Error analyzing material:', error);
-    const message =
-      error?.message?.includes('API_KEY_INVALID')
-        ? 'Gemini API 金鑰無效，請檢查設定。'
-        : error?.message || '分析材料特徵時發生錯誤，請稍後再試。';
+    let message = '分析材料特徵時發生錯誤，請稍後再試。';
+
+    if (error?.message) {
+      if (error.message.includes('API_KEY_INVALID')) {
+        message = 'Gemini API 金鑰無效，請檢查設定。';
+      } else if (error.message.includes('503') || error.message.includes('high demand') || error.message.includes('UNAVAILABLE')) {
+        message = 'AI 模型目前伺服器負載較高，請稍候重試。';
+      } else if (error.message.includes('{')) {
+        // Try parsing nested JSON error
+        try {
+          const jsonMatch = error.message.match(/\{[\s\S]*\}/);
+          if (jsonMatch) {
+            const parsed = JSON.parse(jsonMatch[0]);
+            if (parsed.error?.message) {
+              message = `AI 服務繁忙 (${parsed.error.message})，請重試。`;
+            }
+          }
+        } catch {
+          // ignore parsing error
+        }
+      }
+    }
 
     return res.status(500).json({ error: message });
   }
@@ -232,6 +433,10 @@ app.get('/api/health', (_req, res) => {
 
 async function startServer() {
   const isProd = process.env.NODE_ENV === 'production';
+
+  // Serve static public assets (material swatch images, etc.)
+  const publicPath = path.resolve(__dirname, 'public');
+  app.use(express.static(publicPath));
 
   if (!isProd) {
     const { createServer: createViteServer } = await import('vite');

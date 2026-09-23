@@ -8,6 +8,7 @@ import { AnalyzeButton } from './components/AnalyzeButton';
 import { SearchProgress } from './components/SearchProgress';
 import { MaterialResults } from './components/MaterialResults';
 import { MaterialImportModal } from './components/MaterialImportModal';
+import { MaterialLibraryBrowserModal } from './components/MaterialLibraryBrowserModal';
 import { PrivacyNotice } from './components/PrivacyNotice';
 
 import {
@@ -18,7 +19,7 @@ import {
 import { materialRepository } from './services/materialRepository';
 import { materialSearchService } from './services/materialSearchService';
 import { analyzeMaterialWithAI } from './services/geminiService';
-import { AlertCircle, RefreshCw } from 'lucide-react';
+import { AlertCircle, RefreshCw, BookOpen, ExternalLink, Sparkles } from 'lucide-react';
 
 export default function App() {
   // Input states
@@ -41,7 +42,8 @@ export default function App() {
     MaterialSearchResult[] | null
   >(null);
 
-  // Material Library count & Admin Modal
+  // Material Library count & Modals
+  const [isLibraryModalOpen, setIsLibraryModalOpen] = useState<boolean>(false);
   const [isImportModalOpen, setIsImportModalOpen] = useState<boolean>(false);
   const [materialCount, setMaterialCount] = useState<number>(() =>
     materialRepository.getAllMaterials().length
@@ -179,12 +181,39 @@ export default function App() {
     <div className="min-h-screen bg-slate-100 text-slate-900 flex flex-col selection:bg-blue-600 selection:text-white">
       {/* App Header */}
       <Header
+        onOpenLibrary={() => setIsLibraryModalOpen(true)}
         onOpenImport={() => setIsImportModalOpen(true)}
         materialCount={materialCount}
       />
 
       {/* Main Container: Mobile First single column */}
       <main className="flex-1 max-w-2xl w-full mx-auto px-4 py-6 space-y-5">
+        {/* Quick Entry: Browse Full Material Library Swatches */}
+        {!searchResults && (
+          <div className="bg-gradient-to-r from-blue-50 via-indigo-50 to-white border border-blue-200/80 rounded-2xl p-3.5 flex items-center justify-between shadow-xs">
+            <div className="flex items-center space-x-3">
+              <div className="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-sm shadow-sm">
+                <BookOpen className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="text-xs sm:text-sm font-bold text-slate-900">
+                  百和材料圖書館樣品庫
+                </h4>
+                <p className="text-[11px] text-slate-500">
+                  收錄 {materialCount} 款實體鞋面網布、緹花織帶、反光鞋帶高清圖與規格
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setIsLibraryModalOpen(true)}
+              className="px-3 py-1.5 bg-white hover:bg-blue-50 text-blue-700 text-xs font-bold rounded-xl border border-blue-200 transition-colors shadow-xs shrink-0"
+            >
+              瀏覽全部樣品
+            </button>
+          </div>
+        )}
+
         {/* Error Alert Message */}
         {errorMessage && (
           <div className="rounded-2xl bg-red-50 border border-red-200 p-4 text-red-900 flex items-start space-x-3 shadow-sm animate-fade-in">
@@ -268,6 +297,12 @@ export default function App() {
 
       {/* Privacy Notice & Footer */}
       <PrivacyNotice />
+
+      {/* Material Library Swatch Browser Modal */}
+      <MaterialLibraryBrowserModal
+        isOpen={isLibraryModalOpen}
+        onClose={() => setIsLibraryModalOpen(false)}
+      />
 
       {/* Admin / Dev Material Import Modal */}
       <MaterialImportModal

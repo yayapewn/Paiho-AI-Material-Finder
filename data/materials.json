@@ -3,20 +3,54 @@
     "id": "MTK341",
     "name_zh": "高透氣針織鞋面網布",
     "name_en": "High Breathability Knit Upper Mesh",
-    "image_url": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Knit Upper", "Webbing"],
-    "structure": ["Knit"],
-    "construction": ["Mesh", "Fine Texture"],
-    "feature": ["Jacquard", "Breathable Mesh"],
-    "process": ["Knitting", "Dyeing"],
-    "function": ["Breathable", "Lightweight", "Stretch"],
-    "color": ["Black"],
-    "style": ["Sporty", "Modern"],
-    "handfeel": ["Soft", "Flexible"],
-    "composition": ["Polyester 85%", "Spandex 15%"],
-    "application": ["Footwear", "Footwear Upper"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/knit_mesh.jpg",
+    "official_url": "https://paiho-usa.com/product-category/fabrics-spacer-mesh/",
+    "product": [
+      "Knit Upper",
+      "Webbing"
+    ],
+    "structure": [
+      "Knit"
+    ],
+    "construction": [
+      "Mesh",
+      "Fine Texture"
+    ],
+    "feature": [
+      "Jacquard",
+      "Breathable Mesh"
+    ],
+    "process": [
+      "Knitting",
+      "Dyeing"
+    ],
+    "function": [
+      "Breathable",
+      "Lightweight",
+      "Stretch"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Sporty",
+      "Modern"
+    ],
+    "handfeel": [
+      "Soft",
+      "Flexible"
+    ],
+    "composition": [
+      "Polyester 85%",
+      "Spandex 15%"
+    ],
+    "application": [
+      "Footwear",
+      "Footwear Upper"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 針織 網孔 透氣 彈性 鞋面 高透氣針織鞋面網布 Black Knit Mesh Breathable Footwear Upper",
     "visual_description": "Black fine knitted mesh fabric with open ventilation pore structure, matte finish, soft touch.",
     "demo": true
@@ -25,20 +59,53 @@
     "id": "JCD802",
     "name_zh": "3D立體雙色緹花織帶",
     "name_en": "3D Bicolor Jacquard Webbing",
-    "image_url": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Webbing", "Ribbon"],
-    "structure": ["Woven"],
-    "construction": ["Jacquard", "Textured"],
-    "feature": ["Jacquard", "Geometric Pattern"],
-    "process": ["Jacquard Weaving"],
-    "function": ["Abrasion Resistant", "High Tenacity"],
-    "color": ["Black", "White"],
-    "style": ["Technical", "Streetwear"],
-    "handfeel": ["Firm", "Durable"],
-    "composition": ["Polyester 100%"],
-    "application": ["Footwear", "Bags", "Apparel"],
-    "sustainability": ["OEKO-TEX"],
+    "image_url": "/assets/materials/jacquard_webbing.jpg",
+    "official_url": "https://paiho-usa.com/product-category/webbings/",
+    "product": [
+      "Webbing",
+      "Ribbon"
+    ],
+    "structure": [
+      "Woven"
+    ],
+    "construction": [
+      "Jacquard",
+      "Textured"
+    ],
+    "feature": [
+      "Jacquard",
+      "Geometric Pattern"
+    ],
+    "process": [
+      "Jacquard Weaving"
+    ],
+    "function": [
+      "Abrasion Resistant",
+      "High Tenacity"
+    ],
+    "color": [
+      "Black",
+      "White"
+    ],
+    "style": [
+      "Technical",
+      "Streetwear"
+    ],
+    "handfeel": [
+      "Firm",
+      "Durable"
+    ],
+    "composition": [
+      "Polyester 100%"
+    ],
+    "application": [
+      "Footwear",
+      "Bags",
+      "Apparel"
+    ],
+    "sustainability": [
+      "OEKO-TEX"
+    ],
     "search_text": "黑色 白色 緹花 梭織 織帶 幾何紋理 耐磨 Jacquard Woven Webbing Black White",
     "visual_description": "High density woven webbing featuring 3D jacquard geometric contrast pattern with crisp edges.",
     "demo": true
@@ -47,20 +114,54 @@
     "id": "REF550",
     "name_zh": "高反光安全編織鞋帶",
     "name_en": "High Visibility Reflective Braided Shoelace",
-    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Shoelace", "Cord"],
-    "structure": ["Braided"],
-    "construction": ["Round Braid"],
-    "feature": ["Reflective", "Night Safety"],
-    "process": ["Braiding", "Reflective Yarn Twisting"],
-    "function": ["Reflective", "Lightweight", "Abrasion Resistant"],
-    "color": ["Black", "Silver"],
-    "style": ["Running", "Outdoor"],
-    "handfeel": ["Supple", "Grippy"],
-    "composition": ["Polyester 80%", "Reflective Yarn 20%"],
-    "application": ["Footwear", "Shoelace"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/reflective_shoelace.jpg",
+    "official_url": "https://paiho-usa.com/product-category/drawcords-shoelaces-tips/",
+    "product": [
+      "Shoelace",
+      "Cord"
+    ],
+    "structure": [
+      "Braided"
+    ],
+    "construction": [
+      "Round Braid"
+    ],
+    "feature": [
+      "Reflective",
+      "Night Safety"
+    ],
+    "process": [
+      "Braiding",
+      "Reflective Yarn Twisting"
+    ],
+    "function": [
+      "Reflective",
+      "Lightweight",
+      "Abrasion Resistant"
+    ],
+    "color": [
+      "Black",
+      "Silver"
+    ],
+    "style": [
+      "Running",
+      "Outdoor"
+    ],
+    "handfeel": [
+      "Supple",
+      "Grippy"
+    ],
+    "composition": [
+      "Polyester 80%",
+      "Reflective Yarn 20%"
+    ],
+    "application": [
+      "Footwear",
+      "Shoelace"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 反光 編織 鞋帶 圓帶 夜間安全 Black Reflective Braided Shoelace Footwear",
     "visual_description": "Tubular braided cord with interwoven silver reflective micro-filaments across dark base.",
     "demo": true
@@ -69,20 +170,50 @@
     "id": "WBN210",
     "name_zh": "耐磨高強力尼龍平紋織帶",
     "name_en": "High Tenacity Abrasion Nylon Plain Webbing",
-    "image_url": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Webbing"],
-    "structure": ["Woven"],
-    "construction": ["Plain"],
-    "feature": ["High Tenacity", "Heavy Duty"],
-    "process": ["Shuttleless Weaving"],
-    "function": ["Abrasion Resistant", "High Tenacity"],
-    "color": ["Black"],
-    "style": ["Military", "Outdoor"],
-    "handfeel": ["Stiff", "Tough"],
-    "composition": ["Nylon 100%"],
-    "application": ["Bags", "Footwear", "Tactical"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/jacquard_webbing.jpg",
+    "official_url": "https://paiho-usa.com/product-category/webbings/",
+    "product": [
+      "Webbing"
+    ],
+    "structure": [
+      "Woven"
+    ],
+    "construction": [
+      "Plain"
+    ],
+    "feature": [
+      "High Tenacity",
+      "Heavy Duty"
+    ],
+    "process": [
+      "Shuttleless Weaving"
+    ],
+    "function": [
+      "Abrasion Resistant",
+      "High Tenacity"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Military",
+      "Outdoor"
+    ],
+    "handfeel": [
+      "Stiff",
+      "Tough"
+    ],
+    "composition": [
+      "Nylon 100%"
+    ],
+    "application": [
+      "Bags",
+      "Footwear",
+      "Tactical"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 尼龍 梭織 織帶 耐磨 高強力 Plain Woven Nylon Webbing Black",
     "visual_description": "Dense black plain woven webbing with uniform surface ribs and high shear resistance.",
     "demo": true
@@ -91,20 +222,54 @@
     "id": "ELB401",
     "name_zh": "柔軟四向彈性提花包邊帶",
     "name_en": "Soft 4-Way Stretch Jacquard Binding Tape",
-    "image_url": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Elastic Band", "Webbing"],
-    "structure": ["Knit"],
-    "construction": ["Rib", "Fine Texture"],
-    "feature": ["Jacquard", "Plush Back"],
-    "process": ["Warp Knitting"],
-    "function": ["Stretch", "Soft", "Breathable"],
-    "color": ["Black"],
-    "style": ["Comfort", "Activewear"],
-    "handfeel": ["Ultra Soft", "Skin-friendly"],
-    "composition": ["Nylon 72%", "Spandex 28%"],
-    "application": ["Footwear", "Apparel", "Footwear Upper"],
-    "sustainability": ["OEKO-TEX"],
+    "image_url": "/assets/materials/elastic_grip.jpg",
+    "official_url": "https://paiho-usa.com/product-category/elastics/",
+    "product": [
+      "Elastic Band",
+      "Webbing"
+    ],
+    "structure": [
+      "Knit"
+    ],
+    "construction": [
+      "Rib",
+      "Fine Texture"
+    ],
+    "feature": [
+      "Jacquard",
+      "Plush Back"
+    ],
+    "process": [
+      "Warp Knitting"
+    ],
+    "function": [
+      "Stretch",
+      "Soft",
+      "Breathable"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Comfort",
+      "Activewear"
+    ],
+    "handfeel": [
+      "Ultra Soft",
+      "Skin-friendly"
+    ],
+    "composition": [
+      "Nylon 72%",
+      "Spandex 28%"
+    ],
+    "application": [
+      "Footwear",
+      "Apparel",
+      "Footwear Upper"
+    ],
+    "sustainability": [
+      "OEKO-TEX"
+    ],
     "search_text": "黑色 彈性 柔軟 針織 包邊帶 提花 透氣 Stretch Soft Knit Binding Tape Black",
     "visual_description": "Smooth black knitted elastic tape with brushed soft skin-side texture and micro ribs.",
     "demo": true
@@ -113,20 +278,52 @@
     "id": "ECO910",
     "name_zh": "環保回收聚酯工程透氣網布",
     "name_en": "Eco-friendly Recycled Polyester Engineered Mesh",
-    "image_url": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Knit Upper"],
-    "structure": ["Knit"],
-    "construction": ["Mesh", "Engineered Jacquard"],
-    "feature": ["Recycled", "Zoned Breathability"],
-    "process": ["Circular Knitting"],
-    "function": ["Breathable", "Lightweight", "Eco-friendly"],
-    "color": ["White"],
-    "style": ["Eco Athletic", "Minimalist"],
-    "handfeel": ["Crisp", "Light"],
-    "composition": ["Recycled PET 100%"],
-    "application": ["Footwear", "Footwear Upper"],
-    "sustainability": ["GRS Certified", "Recycled"],
+    "image_url": "/assets/materials/knit_mesh.jpg",
+    "official_url": "https://paiho-usa.com/product-category/fabrics-spacer-mesh/",
+    "product": [
+      "Knit Upper"
+    ],
+    "structure": [
+      "Knit"
+    ],
+    "construction": [
+      "Mesh",
+      "Engineered Jacquard"
+    ],
+    "feature": [
+      "Recycled",
+      "Zoned Breathability"
+    ],
+    "process": [
+      "Circular Knitting"
+    ],
+    "function": [
+      "Breathable",
+      "Lightweight",
+      "Eco-friendly"
+    ],
+    "color": [
+      "White"
+    ],
+    "style": [
+      "Eco Athletic",
+      "Minimalist"
+    ],
+    "handfeel": [
+      "Crisp",
+      "Light"
+    ],
+    "composition": [
+      "Recycled PET 100%"
+    ],
+    "application": [
+      "Footwear",
+      "Footwear Upper"
+    ],
+    "sustainability": [
+      "GRS Certified",
+      "Recycled"
+    ],
     "search_text": "白色 回收材料 環保 針織 網孔 透氣 輕量 鞋面 Recycled Knit Mesh White Footwear Upper",
     "visual_description": "Pure white engineered circular knit mesh with zonal aperture gradients and eco sheen.",
     "demo": true
@@ -135,20 +332,52 @@
     "id": "REF320",
     "name_zh": "超亮反光印刷緹花織帶",
     "name_en": "Ultra-Bright Reflective Printed Jacquard Webbing",
-    "image_url": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Webbing"],
-    "structure": ["Woven"],
-    "construction": ["Twill"],
-    "feature": ["Reflective", "Printing"],
-    "process": ["Screen Printing", "Reflective Coating"],
-    "function": ["Reflective", "Abrasion Resistant"],
-    "color": ["Black", "Silver"],
-    "style": ["Safety", "Fashion"],
-    "handfeel": ["Firm"],
-    "composition": ["Polyester 90%", "Reflective Film 10%"],
-    "application": ["Footwear", "Bags", "Apparel"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/jacquard_webbing.jpg",
+    "official_url": "https://paiho-usa.com/product-category/webbings/",
+    "product": [
+      "Webbing"
+    ],
+    "structure": [
+      "Woven"
+    ],
+    "construction": [
+      "Twill"
+    ],
+    "feature": [
+      "Reflective",
+      "Printing"
+    ],
+    "process": [
+      "Screen Printing",
+      "Reflective Coating"
+    ],
+    "function": [
+      "Reflective",
+      "Abrasion Resistant"
+    ],
+    "color": [
+      "Black",
+      "Silver"
+    ],
+    "style": [
+      "Safety",
+      "Fashion"
+    ],
+    "handfeel": [
+      "Firm"
+    ],
+    "composition": [
+      "Polyester 90%",
+      "Reflective Film 10%"
+    ],
+    "application": [
+      "Footwear",
+      "Bags",
+      "Apparel"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 銀色 反光 印刷 梭織 織帶 Reflective Printed Woven Webbing Black",
     "visual_description": "Black twill woven strap featuring sharp retroreflective linear pattern coating.",
     "demo": true
@@ -157,20 +386,52 @@
     "id": "MSH605",
     "name_zh": "雙層立體透氣三明治網布",
     "name_en": "Double-Layer 3D Spacer Air Mesh",
-    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Knit Upper"],
-    "structure": ["Knit"],
-    "construction": ["Spacer", "Mesh"],
-    "feature": ["Cushioning", "Airflow Channel"],
-    "process": ["Warp Knitting Spacer"],
-    "function": ["Breathable", "Soft", "Lightweight"],
-    "color": ["Black"],
-    "style": ["Cushioned", "Comfort Running"],
-    "handfeel": ["Bouncy", "Cushioned"],
-    "composition": ["Polyester 100%"],
-    "application": ["Footwear", "Footwear Upper", "Backpacks"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/spacer_mesh.jpg",
+    "official_url": "https://paiho-usa.com/product-category/fabrics-spacer-mesh/",
+    "product": [
+      "Knit Upper"
+    ],
+    "structure": [
+      "Knit"
+    ],
+    "construction": [
+      "Spacer",
+      "Mesh"
+    ],
+    "feature": [
+      "Cushioning",
+      "Airflow Channel"
+    ],
+    "process": [
+      "Warp Knitting Spacer"
+    ],
+    "function": [
+      "Breathable",
+      "Soft",
+      "Lightweight"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Cushioned",
+      "Comfort Running"
+    ],
+    "handfeel": [
+      "Bouncy",
+      "Cushioned"
+    ],
+    "composition": [
+      "Polyester 100%"
+    ],
+    "application": [
+      "Footwear",
+      "Footwear Upper",
+      "Backpacks"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 針織 三明治 網孔 透氣 柔軟 輕量 鞋面 Spacer Air Mesh Knit Black",
     "visual_description": "Volumetric sandwich mesh with hexagonal face apertures and springy vertical filament spacer.",
     "demo": true
@@ -179,20 +440,49 @@
     "id": "SLC108",
     "name_zh": "經典扁平棉感提花鞋帶",
     "name_en": "Classic Flat Cotton-Touch Jacquard Shoelace",
-    "image_url": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Shoelace"],
-    "structure": ["Braided"],
-    "construction": ["Flat Braid"],
-    "feature": ["Jacquard", "Soft Handfeel"],
-    "process": ["Braiding"],
-    "function": ["Soft", "Abrasion Resistant"],
-    "color": ["White"],
-    "style": ["Retro", "Casual"],
-    "handfeel": ["Natural Soft", "Cotton-like"],
-    "composition": ["Polyester Spun 100%"],
-    "application": ["Footwear", "Shoelace"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/reflective_shoelace.jpg",
+    "official_url": "https://paiho-usa.com/product-category/drawcords-shoelaces-tips/",
+    "product": [
+      "Shoelace"
+    ],
+    "structure": [
+      "Braided"
+    ],
+    "construction": [
+      "Flat Braid"
+    ],
+    "feature": [
+      "Jacquard",
+      "Soft Handfeel"
+    ],
+    "process": [
+      "Braiding"
+    ],
+    "function": [
+      "Soft",
+      "Abrasion Resistant"
+    ],
+    "color": [
+      "White"
+    ],
+    "style": [
+      "Retro",
+      "Casual"
+    ],
+    "handfeel": [
+      "Natural Soft",
+      "Cotton-like"
+    ],
+    "composition": [
+      "Polyester Spun 100%"
+    ],
+    "application": [
+      "Footwear",
+      "Shoelace"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "白色 扁平 鞋帶 編織 柔軟 緹花 Shoelace Flat Braided White Soft",
     "visual_description": "Clean matte white flat braided shoelace with subtle micro-herringbone edge pattern.",
     "demo": true
@@ -201,20 +491,52 @@
     "id": "SLC215",
     "name_zh": "雙色圓型戶外反光鞋帶",
     "name_en": "Two-Tone Round Outdoor Reflective Shoelace",
-    "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Shoelace"],
-    "structure": ["Braided"],
-    "construction": ["Round Braid"],
-    "feature": ["Reflective", "High Tenacity"],
-    "process": ["Braiding"],
-    "function": ["Reflective", "Abrasion Resistant", "Lightweight"],
-    "color": ["Black", "White"],
-    "style": ["Trail", "Hiking"],
-    "handfeel": ["Tightly Braided", "Sturdy"],
-    "composition": ["Polyester 85%", "Reflective 15%"],
-    "application": ["Footwear", "Shoelace"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/reflective_shoelace.jpg",
+    "official_url": "https://paiho-usa.com/product-category/drawcords-shoelaces-tips/",
+    "product": [
+      "Shoelace"
+    ],
+    "structure": [
+      "Braided"
+    ],
+    "construction": [
+      "Round Braid"
+    ],
+    "feature": [
+      "Reflective",
+      "High Tenacity"
+    ],
+    "process": [
+      "Braiding"
+    ],
+    "function": [
+      "Reflective",
+      "Abrasion Resistant",
+      "Lightweight"
+    ],
+    "color": [
+      "Black",
+      "White"
+    ],
+    "style": [
+      "Trail",
+      "Hiking"
+    ],
+    "handfeel": [
+      "Tightly Braided",
+      "Sturdy"
+    ],
+    "composition": [
+      "Polyester 85%",
+      "Reflective 15%"
+    ],
+    "application": [
+      "Footwear",
+      "Shoelace"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 白色 反光 編織 圓帶 鞋帶 耐磨 Shoelace Round Braided Reflective",
     "visual_description": "Spotted black and white high density round shoelace with continuous spiral reflective filaments.",
     "demo": true
@@ -223,20 +545,54 @@
     "id": "GRIP70",
     "name_zh": "波浪矽膠止滑彈性織帶",
     "name_en": "Wave Silicone Non-Slip Elastic Webbing",
-    "image_url": "https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Elastic Band", "Webbing"],
-    "structure": ["Woven"],
-    "construction": ["Rib"],
-    "feature": ["Silicone Grip", "Anti-Slip"],
-    "process": ["Silicone Coating", "Weaving"],
-    "function": ["Stretch", "Abrasion Resistant"],
-    "color": ["Black"],
-    "style": ["Performance", "Cycling"],
-    "handfeel": ["Grippy", "Elastic"],
-    "composition": ["Polyester 65%", "Spandex 25%", "Silicone 10%"],
-    "application": ["Footwear", "Apparel", "Sportswear"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/elastic_grip.jpg",
+    "official_url": "https://paiho-usa.com/product-category/elastics/",
+    "product": [
+      "Elastic Band",
+      "Webbing"
+    ],
+    "structure": [
+      "Woven"
+    ],
+    "construction": [
+      "Rib"
+    ],
+    "feature": [
+      "Silicone Grip",
+      "Anti-Slip"
+    ],
+    "process": [
+      "Silicone Coating",
+      "Weaving"
+    ],
+    "function": [
+      "Stretch",
+      "Abrasion Resistant"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Performance",
+      "Cycling"
+    ],
+    "handfeel": [
+      "Grippy",
+      "Elastic"
+    ],
+    "composition": [
+      "Polyester 65%",
+      "Spandex 25%",
+      "Silicone 10%"
+    ],
+    "application": [
+      "Footwear",
+      "Apparel",
+      "Sportswear"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 彈性 止滑 矽膠 織帶 耐磨 Elastic Webbing Silicone Grip Black",
     "visual_description": "Matte black elastic band coated with continuous sinusoidal wave clear non-slip silicone.",
     "demo": true
@@ -245,20 +601,53 @@
     "id": "KNM442",
     "name_zh": "蜂巢微孔輕量針織鞋面料",
     "name_en": "Honeycomb Micro-Aperture Lightweight Knit Fabric",
-    "image_url": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Knit Upper"],
-    "structure": ["Knit"],
-    "construction": ["Mesh", "Fine Texture"],
-    "feature": ["Breathable Mesh", "Micro Texture"],
-    "process": ["Jacquard Knitting"],
-    "function": ["Breathable", "Lightweight", "Stretch", "Soft"],
-    "color": ["Black"],
-    "style": ["Athleisure", "Marathon"],
-    "handfeel": ["Featherlight", "Silky"],
-    "composition": ["Polyester 92%", "Spandex 8%"],
-    "application": ["Footwear", "Footwear Upper"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/knit_mesh.jpg",
+    "official_url": "https://paiho-usa.com/product-category/fabrics-spacer-mesh/",
+    "product": [
+      "Knit Upper"
+    ],
+    "structure": [
+      "Knit"
+    ],
+    "construction": [
+      "Mesh",
+      "Fine Texture"
+    ],
+    "feature": [
+      "Breathable Mesh",
+      "Micro Texture"
+    ],
+    "process": [
+      "Jacquard Knitting"
+    ],
+    "function": [
+      "Breathable",
+      "Lightweight",
+      "Stretch",
+      "Soft"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Athleisure",
+      "Marathon"
+    ],
+    "handfeel": [
+      "Featherlight",
+      "Silky"
+    ],
+    "composition": [
+      "Polyester 92%",
+      "Spandex 8%"
+    ],
+    "application": [
+      "Footwear",
+      "Footwear Upper"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 蜂巢 針織 網孔 輕量 透氣 柔軟 鞋面 Knit Honeycomb Mesh Black Lightweight",
     "visual_description": "Micro-geometric honeycomb knit texture with tiny breathable ventilation pores throughout.",
     "demo": true
@@ -267,20 +656,49 @@
     "id": "WVN130",
     "name_zh": "超薄高密防潑水梭織布",
     "name_en": "Ultralight High-Density Water Repellent Woven Fabric",
-    "image_url": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Woven Fabric"],
-    "structure": ["Woven"],
-    "construction": ["Ripstop"],
-    "feature": ["DWR Coating", "Fine Texture"],
-    "process": ["Water Repellent Finish"],
-    "function": ["Lightweight", "Abrasion Resistant"],
-    "color": ["Black"],
-    "style": ["Windbreaker", "Technical"],
-    "handfeel": ["Crisp Paper-touch"],
-    "composition": ["Nylon 100%"],
-    "application": ["Footwear", "Apparel", "Bags"],
-    "sustainability": ["PFC-free DWR"],
+    "image_url": "/assets/materials/jacquard_webbing.jpg",
+    "official_url": "https://paiho-usa.com/product-category/fabrics-spacer-mesh/",
+    "product": [
+      "Woven Fabric"
+    ],
+    "structure": [
+      "Woven"
+    ],
+    "construction": [
+      "Ripstop"
+    ],
+    "feature": [
+      "DWR Coating",
+      "Fine Texture"
+    ],
+    "process": [
+      "Water Repellent Finish"
+    ],
+    "function": [
+      "Lightweight",
+      "Abrasion Resistant"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Windbreaker",
+      "Technical"
+    ],
+    "handfeel": [
+      "Crisp Paper-touch"
+    ],
+    "composition": [
+      "Nylon 100%"
+    ],
+    "application": [
+      "Footwear",
+      "Apparel",
+      "Bags"
+    ],
+    "sustainability": [
+      "PFC-free DWR"
+    ],
     "search_text": "黑色 梭織 輕量 耐磨 防潑水 Ripstop Woven Fabric Black Lightweight",
     "visual_description": "Subtle mini-ripstop grid woven fabric with satin technical sheen and ultra-flat surface.",
     "demo": true
@@ -289,20 +707,49 @@
     "id": "HKL099",
     "name_zh": "超薄射出勾魔鬼氈黏扣帶",
     "name_en": "Ultra-Thin Injection Molded Hook & Loop Tape",
-    "image_url": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Hook & Loop"],
-    "structure": ["Molded"],
-    "construction": ["Micro Hook"],
-    "feature": ["Ultra Slim", "High Shear"],
-    "process": ["Micro Injection Molding"],
-    "function": ["Abrasion Resistant", "Lightweight"],
-    "color": ["Black"],
-    "style": ["Minimalist Closure"],
-    "handfeel": ["Smooth Face", "Micro Texture"],
-    "composition": ["Polypropylene 100%"],
-    "application": ["Footwear", "Medical", "Apparel"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/hook_loop.jpg",
+    "official_url": "https://paiho-usa.com/product-category/easy-tape-molded-hook/",
+    "product": [
+      "Hook & Loop"
+    ],
+    "structure": [
+      "Molded"
+    ],
+    "construction": [
+      "Micro Hook"
+    ],
+    "feature": [
+      "Ultra Slim",
+      "High Shear"
+    ],
+    "process": [
+      "Micro Injection Molding"
+    ],
+    "function": [
+      "Abrasion Resistant",
+      "Lightweight"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Minimalist Closure"
+    ],
+    "handfeel": [
+      "Smooth Face",
+      "Micro Texture"
+    ],
+    "composition": [
+      "Polypropylene 100%"
+    ],
+    "application": [
+      "Footwear",
+      "Medical",
+      "Apparel"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 魔鬼氈 黏扣帶 射出勾 輕量 Hook and Loop Tape Black Ultra Thin",
     "visual_description": "Low profile flexible molded tape with thousands of microscopic mushroom-shaped hooks.",
     "demo": true
@@ -311,20 +758,55 @@
     "id": "ECO301",
     "name_zh": "回收海洋塑料高彈針織織帶",
     "name_en": "Ocean Recycled Plastic High Stretch Knit Webbing",
-    "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Webbing", "Elastic Band"],
-    "structure": ["Knit"],
-    "construction": ["Rib", "Fine Texture"],
-    "feature": ["Recycled", "Ocean Plastic"],
-    "process": ["Warp Knitting"],
-    "function": ["Stretch", "Eco-friendly", "Soft"],
-    "color": ["White"],
-    "style": ["Eco Friendly", "Clean"],
-    "handfeel": ["Soft", "Elastic"],
-    "composition": ["Recycled Ocean Polyester 80%", "Spandex 20%"],
-    "application": ["Footwear", "Footwear Upper", "Apparel"],
-    "sustainability": ["Ocean Bound Plastic Certified", "Recycled"],
+    "image_url": "/assets/materials/elastic_grip.jpg",
+    "official_url": "https://paiho-usa.com/product-category/webbings/",
+    "product": [
+      "Webbing",
+      "Elastic Band"
+    ],
+    "structure": [
+      "Knit"
+    ],
+    "construction": [
+      "Rib",
+      "Fine Texture"
+    ],
+    "feature": [
+      "Recycled",
+      "Ocean Plastic"
+    ],
+    "process": [
+      "Warp Knitting"
+    ],
+    "function": [
+      "Stretch",
+      "Eco-friendly",
+      "Soft"
+    ],
+    "color": [
+      "White"
+    ],
+    "style": [
+      "Eco Friendly",
+      "Clean"
+    ],
+    "handfeel": [
+      "Soft",
+      "Elastic"
+    ],
+    "composition": [
+      "Recycled Ocean Polyester 80%",
+      "Spandex 20%"
+    ],
+    "application": [
+      "Footwear",
+      "Footwear Upper",
+      "Apparel"
+    ],
+    "sustainability": [
+      "Ocean Bound Plastic Certified",
+      "Recycled"
+    ],
     "search_text": "白色 回收材料 環保 彈性 針織 織帶 柔軟 Recycled Stretch Knit Webbing White",
     "visual_description": "Bright white knitted elastic ribbon made of fine recycled filaments with soft rib relief.",
     "demo": true
@@ -333,20 +815,51 @@
     "id": "JCD520",
     "name_zh": "精細文字緹花提手織帶",
     "name_en": "Precision Typographic Jacquard Handle Ribbon",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Webbing", "Ribbon"],
-    "structure": ["Woven"],
-    "construction": ["Jacquard"],
-    "feature": ["Jacquard", "Fine Texture"],
-    "process": ["High Density Jacquard"],
-    "function": ["Abrasion Resistant", "High Tenacity"],
-    "color": ["Black", "White"],
-    "style": ["Branded", "Street"],
-    "handfeel": ["Durable", "Smooth"],
-    "composition": ["Polyester 100%"],
-    "application": ["Footwear", "Bags"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/jacquard_webbing.jpg",
+    "official_url": "https://paiho-usa.com/product-category/webbings/",
+    "product": [
+      "Webbing",
+      "Ribbon"
+    ],
+    "structure": [
+      "Woven"
+    ],
+    "construction": [
+      "Jacquard"
+    ],
+    "feature": [
+      "Jacquard",
+      "Fine Texture"
+    ],
+    "process": [
+      "High Density Jacquard"
+    ],
+    "function": [
+      "Abrasion Resistant",
+      "High Tenacity"
+    ],
+    "color": [
+      "Black",
+      "White"
+    ],
+    "style": [
+      "Branded",
+      "Street"
+    ],
+    "handfeel": [
+      "Durable",
+      "Smooth"
+    ],
+    "composition": [
+      "Polyester 100%"
+    ],
+    "application": [
+      "Footwear",
+      "Bags"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 白色 緹花 梭織 織帶 耐磨 Jacquard Woven Webbing Black White",
     "visual_description": "High resolution typographic woven webbing with sharp white font contrasting against deep black base.",
     "demo": true
@@ -355,20 +868,50 @@
     "id": "CRD610",
     "name_zh": "高韌性編織登山抽繩",
     "name_en": "High Tenacity Braided Trekking Drawcord",
-    "image_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Cord", "Shoelace"],
-    "structure": ["Braided"],
-    "construction": ["Kermantle Braid"],
-    "feature": ["High Tenacity", "Weatherproof"],
-    "process": ["Braiding with Core"],
-    "function": ["Abrasion Resistant", "Lightweight"],
-    "color": ["Black"],
-    "style": ["Outdoor Trekking"],
-    "handfeel": ["Firm", "Round"],
-    "composition": ["Nylon 100%"],
-    "application": ["Footwear", "Bags", "Apparel"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/reflective_shoelace.jpg",
+    "official_url": "https://paiho-usa.com/product-category/drawcords-shoelaces-tips/",
+    "product": [
+      "Cord",
+      "Shoelace"
+    ],
+    "structure": [
+      "Braided"
+    ],
+    "construction": [
+      "Kermantle Braid"
+    ],
+    "feature": [
+      "High Tenacity",
+      "Weatherproof"
+    ],
+    "process": [
+      "Braiding with Core"
+    ],
+    "function": [
+      "Abrasion Resistant",
+      "Lightweight"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Outdoor Trekking"
+    ],
+    "handfeel": [
+      "Firm",
+      "Round"
+    ],
+    "composition": [
+      "Nylon 100%"
+    ],
+    "application": [
+      "Footwear",
+      "Bags",
+      "Apparel"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 編織 繩帶 抽繩 耐磨 高強力 Braided Cord Black Outdoor",
     "visual_description": "Heavy duty solid black kernmantle braided cord with tight diamond outer sheath.",
     "demo": true
@@ -377,20 +920,54 @@
     "id": "REF909",
     "name_zh": "360度全反光圓針織鞋面套筒",
     "name_en": "360 Full Reflective Circular Knit Shoe Collar",
-    "image_url": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Knit Upper"],
-    "structure": ["Knit"],
-    "construction": ["Rib", "Fine Texture"],
-    "feature": ["Reflective", "Seamless"],
-    "process": ["Circular Rib Knitting"],
-    "function": ["Reflective", "Stretch", "Breathable"],
-    "color": ["Black", "Silver"],
-    "style": ["Futuristic", "Night Run"],
-    "handfeel": ["Elastic", "Silky"],
-    "composition": ["Nylon 60%", "Reflective Yarn 25%", "Spandex 15%"],
-    "application": ["Footwear", "Footwear Upper"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/knit_mesh.jpg",
+    "official_url": "https://paiho-usa.com/product-category/fabrics-spacer-mesh/",
+    "product": [
+      "Knit Upper"
+    ],
+    "structure": [
+      "Knit"
+    ],
+    "construction": [
+      "Rib",
+      "Fine Texture"
+    ],
+    "feature": [
+      "Reflective",
+      "Seamless"
+    ],
+    "process": [
+      "Circular Rib Knitting"
+    ],
+    "function": [
+      "Reflective",
+      "Stretch",
+      "Breathable"
+    ],
+    "color": [
+      "Black",
+      "Silver"
+    ],
+    "style": [
+      "Futuristic",
+      "Night Run"
+    ],
+    "handfeel": [
+      "Elastic",
+      "Silky"
+    ],
+    "composition": [
+      "Nylon 60%",
+      "Reflective Yarn 25%",
+      "Spandex 15%"
+    ],
+    "application": [
+      "Footwear",
+      "Footwear Upper"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 反光 針織 彈性 透氣 鞋面 領口 Reflective Knit Stretch Upper Footwear",
     "visual_description": "Tubular seamless knit ribbed cuff with omni-directional embedded reflective yarn micro-stripes.",
     "demo": true
@@ -399,20 +976,50 @@
     "id": "WBN330",
     "name_zh": "輕量高彈人字紋彈性帶",
     "name_en": "Lightweight High Stretch Herringbone Elastic",
-    "image_url": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Elastic Band", "Webbing"],
-    "structure": ["Woven"],
-    "construction": ["Herringbone"],
-    "feature": ["Herringbone Texture"],
-    "process": ["Shuttleless Weaving"],
-    "function": ["Stretch", "Lightweight", "Soft"],
-    "color": ["White"],
-    "style": ["Minimalist"],
-    "handfeel": ["Supple", "Soft Elastic"],
-    "composition": ["Polyester 75%", "Spandex 25%"],
-    "application": ["Footwear", "Apparel"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/elastic_grip.jpg",
+    "official_url": "https://paiho-usa.com/product-category/elastics/",
+    "product": [
+      "Elastic Band",
+      "Webbing"
+    ],
+    "structure": [
+      "Woven"
+    ],
+    "construction": [
+      "Herringbone"
+    ],
+    "feature": [
+      "Herringbone Texture"
+    ],
+    "process": [
+      "Shuttleless Weaving"
+    ],
+    "function": [
+      "Stretch",
+      "Lightweight",
+      "Soft"
+    ],
+    "color": [
+      "White"
+    ],
+    "style": [
+      "Minimalist"
+    ],
+    "handfeel": [
+      "Supple",
+      "Soft Elastic"
+    ],
+    "composition": [
+      "Polyester 75%",
+      "Spandex 25%"
+    ],
+    "application": [
+      "Footwear",
+      "Apparel"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "白色 人字紋 彈性 梭織 織帶 柔軟 輕量 Herringbone Elastic Webbing White",
     "visual_description": "Clean off-white woven elastic strap with fine herringbone chevron weave architecture.",
     "demo": true
@@ -421,20 +1028,54 @@
     "id": "KNM880",
     "name_zh": "無縫漸層緹花透氣鞋面布",
     "name_en": "Seamless Gradient Jacquard Breathable Upper Fabric",
-    "image_url": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Knit Upper"],
-    "structure": ["Knit"],
-    "construction": ["Mesh", "Jacquard"],
-    "feature": ["Jacquard", "Breathable Mesh", "Gradient"],
-    "process": ["Flat Bed Computerized Knitting"],
-    "function": ["Breathable", "Lightweight", "Stretch", "Soft"],
-    "color": ["White", "Black"],
-    "style": ["Speed Running", "Ergonomic"],
-    "handfeel": ["Engineered Mesh Feel"],
-    "composition": ["Recycled Polyester 90%", "Spandex 10%"],
-    "application": ["Footwear", "Footwear Upper"],
-    "sustainability": ["Recycled"],
+    "image_url": "/assets/materials/spacer_mesh.jpg",
+    "official_url": "https://paiho-usa.com/product-category/fabrics-spacer-mesh/",
+    "product": [
+      "Knit Upper"
+    ],
+    "structure": [
+      "Knit"
+    ],
+    "construction": [
+      "Mesh",
+      "Jacquard"
+    ],
+    "feature": [
+      "Jacquard",
+      "Breathable Mesh",
+      "Gradient"
+    ],
+    "process": [
+      "Flat Bed Computerized Knitting"
+    ],
+    "function": [
+      "Breathable",
+      "Lightweight",
+      "Stretch",
+      "Soft"
+    ],
+    "color": [
+      "White",
+      "Black"
+    ],
+    "style": [
+      "Speed Running",
+      "Ergonomic"
+    ],
+    "handfeel": [
+      "Engineered Mesh Feel"
+    ],
+    "composition": [
+      "Recycled Polyester 90%",
+      "Spandex 10%"
+    ],
+    "application": [
+      "Footwear",
+      "Footwear Upper"
+    ],
+    "sustainability": [
+      "Recycled"
+    ],
     "search_text": "白色 黑色 針織 緹花 網孔 透氣 輕量 彈性 鞋面 Gradient Jacquard Knit Upper",
     "visual_description": "Engineered knit mesh transitioning seamlessly from dense support weave to high-ventilation open mesh.",
     "demo": true
@@ -443,20 +1084,49 @@
     "id": "SLC305",
     "name_zh": "防鬆脫矽膠點膠編織鞋帶",
     "name_en": "Anti-Untie Silicone Dotted Braided Shoelace",
-    "image_url": "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Shoelace"],
-    "structure": ["Braided"],
-    "construction": ["Flat Braid"],
-    "feature": ["Silicone Grip", "Non-Slip Knot"],
-    "process": ["Silicone Micro-dot Dispensing"],
-    "function": ["Abrasion Resistant", "Soft"],
-    "color": ["Black"],
-    "style": ["Marathon Racing"],
-    "handfeel": ["Textured Grip", "Flexible"],
-    "composition": ["Polyester 90%", "Silicone 10%"],
-    "application": ["Footwear", "Shoelace"],
-    "sustainability": ["Standard"],
+    "image_url": "/assets/materials/reflective_shoelace.jpg",
+    "official_url": "https://paiho-usa.com/product-category/drawcords-shoelaces-tips/",
+    "product": [
+      "Shoelace"
+    ],
+    "structure": [
+      "Braided"
+    ],
+    "construction": [
+      "Flat Braid"
+    ],
+    "feature": [
+      "Silicone Grip",
+      "Non-Slip Knot"
+    ],
+    "process": [
+      "Silicone Micro-dot Dispensing"
+    ],
+    "function": [
+      "Abrasion Resistant",
+      "Soft"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Marathon Racing"
+    ],
+    "handfeel": [
+      "Textured Grip",
+      "Flexible"
+    ],
+    "composition": [
+      "Polyester 90%",
+      "Silicone 10%"
+    ],
+    "application": [
+      "Footwear",
+      "Shoelace"
+    ],
+    "sustainability": [
+      "Standard"
+    ],
     "search_text": "黑色 扁平 鞋帶 編織 矽膠 止滑 耐磨 Silicone Dot Braided Shoelace Black",
     "visual_description": "Flat black shoelace embedded with miniature clear silicone micro-dots along the knot tying contact surface.",
     "demo": true
@@ -465,20 +1135,51 @@
     "id": "ECO880",
     "name_zh": "100% GRS回收耐磨機能織帶",
     "name_en": "100% GRS Recycled Abrasion Performance Webbing",
-    "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=600&q=80",
-    "official_url": "https://www.paiho.com/tw/material-hub/",
-    "product": ["Webbing"],
-    "structure": ["Woven"],
-    "construction": ["Twill"],
-    "feature": ["Recycled", "High Tenacity"],
-    "process": ["Waterless Dyeing", "Twill Weaving"],
-    "function": ["Abrasion Resistant", "Eco-friendly"],
-    "color": ["Black"],
-    "style": ["Sustainable Outdoor"],
-    "handfeel": ["Dense", "Smooth"],
-    "composition": ["Recycled PET 100%"],
-    "application": ["Footwear", "Bags", "Tactical"],
-    "sustainability": ["GRS Certified", "Recycled"],
+    "image_url": "/assets/materials/jacquard_webbing.jpg",
+    "official_url": "https://paiho-usa.com/product-category/webbings/",
+    "product": [
+      "Webbing"
+    ],
+    "structure": [
+      "Woven"
+    ],
+    "construction": [
+      "Twill"
+    ],
+    "feature": [
+      "Recycled",
+      "High Tenacity"
+    ],
+    "process": [
+      "Waterless Dyeing",
+      "Twill Weaving"
+    ],
+    "function": [
+      "Abrasion Resistant",
+      "Eco-friendly"
+    ],
+    "color": [
+      "Black"
+    ],
+    "style": [
+      "Sustainable Outdoor"
+    ],
+    "handfeel": [
+      "Dense",
+      "Smooth"
+    ],
+    "composition": [
+      "Recycled PET 100%"
+    ],
+    "application": [
+      "Footwear",
+      "Bags",
+      "Tactical"
+    ],
+    "sustainability": [
+      "GRS Certified",
+      "Recycled"
+    ],
     "search_text": "黑色 回收材料 環保 梭織 織帶 耐磨 GRS Recycled Woven Webbing Black",
     "visual_description": "Deep black sustainable woven webbing with clean diagonal twill luster and smooth touch.",
     "demo": true
