@@ -1,0 +1,6 @@
+{
+  "name": "Paiho AI Material Finder 百和 AI 相似材料搜尋",
+  "description": "拍一張，說一句，找到最接近的百和材料。Take a photo. Describe what you need. Find similar Paiho materials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
