@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/Paiho-AI-Material-Finder/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
