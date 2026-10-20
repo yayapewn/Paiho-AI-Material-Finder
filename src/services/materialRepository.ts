@@ -59,8 +59,8 @@ class MaterialRepository implements MaterialDataProvider {
     if (!item.name_zh || typeof item.name_zh !== 'string') {
       errors.push('缺少必填欄位: name_zh (中文名稱)');
     }
-    if (!item.name_en || typeof item.name_en !== 'string') {
-      errors.push('缺少必填欄位: name_en (英文名稱)');
+    if (typeof item.name_en !== 'string') {
+      errors.push('name_en 必須為文字；來源未提供時可留空');
     }
     if (!item.image_url || typeof item.image_url !== 'string') {
       errors.push('缺少欄位: image_url');
