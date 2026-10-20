@@ -19,6 +19,13 @@ export interface Material {
   search_text?: string;
   visual_description?: string;
   demo: boolean;
+  description?: string;
+  specifications?: string[][][];
+  tags?: string[];
+  origin?: string[];
+  source_image_url?: string;
+  source_checked_at?: string;
+  image_checked_at?: string;
 }
 
 export interface MaterialValidationResult {
