@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { MaterialSearchResult } from '../types/search';
 import { MatchReasons } from './MatchReasons';
 import { SpecSheetModal } from './SpecSheetModal';
+import { imageUrl } from './MaterialImage';
 import {
   ExternalLink,
   Layers,
@@ -106,7 +107,7 @@ export const MaterialCard: React.FC<MaterialCardProps> = ({ result, rank }) => {
               </div>
             ) : (
               <img
-                src={material.image_url}
+                src={imageUrl(material.image_url)}
                 alt={material.name_zh}
                 onError={() => setImgError(true)}
                 className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
@@ -252,7 +253,7 @@ export const MaterialCard: React.FC<MaterialCardProps> = ({ result, rank }) => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center space-x-1.5 px-3.5 py-2 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white text-xs font-bold rounded-xl transition-all shadow-sm"
             >
-              <span>百和官方品類專區</span>
+              <span>Material Hub 材料原頁</span>
               <ExternalLink className="w-3.5 h-3.5 ml-0.5" />
             </a>
 

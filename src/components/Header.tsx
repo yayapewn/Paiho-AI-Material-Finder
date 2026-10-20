@@ -62,11 +62,11 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Paiho Official Product Portal */}
           <a
-            href="https://paiho-usa.com/category/products/"
+            href="https://www.paiho.com/tw/material-hub/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 transition-colors"
-            title="前往 Paiho 官方產品入口 (Product Hub)"
+            title="前往百和 Material Hub"
           >
             <span className="hidden xs:inline">官網產品</span>
             <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
