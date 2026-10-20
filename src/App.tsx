@@ -200,7 +200,7 @@ export default function App() {
                   百和材料圖書館樣品庫
                 </h4>
                 <p className="text-[11px] text-slate-500">
-                  收錄 {materialCount} 款實體鞋面網布、緹花織帶、反光鞋帶高清圖與規格
+                  收錄 {materialCount} 筆官方材料圖片、對應說明與規格
                 </p>
               </div>
             </div>
