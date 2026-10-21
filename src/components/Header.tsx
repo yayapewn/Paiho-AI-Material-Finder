@@ -26,11 +26,11 @@ export const Header: React.FC<HeaderProps> = ({
                 Paiho AI Material Finder
               </h1>
               <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                AI
+                本機比對
               </span>
             </div>
             <p className="text-xs text-slate-500 font-medium mt-0.5">
-              百和 AI 相似材料搜尋
+              百和材料外觀搜尋
             </p>
           </div>
         </div>
@@ -78,10 +78,10 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="bg-slate-50/80 border-t border-slate-100 px-4 py-2 text-center">
         <p className="text-xs sm:text-sm font-medium text-slate-800 flex items-center justify-center gap-1.5">
           <Sparkles className="w-3.5 h-3.5 text-blue-600 inline" />
-          <span>拍一張，說一句，找到最接近的百和材料。</span>
+          <span>拍張材料特寫，探索外觀相近的百和材料。</span>
         </p>
         <p className="text-[11px] text-slate-500 mt-0.5">
-          Take a photo. Describe what you need. Find similar Paiho materials.
+          Photo matching in your browser. No image upload.
         </p>
       </div>
     </header>
