@@ -2,14 +2,17 @@ export type Descriptor = {color:number[]; texture:number[]; pattern:number[]};
 const normalized=(v:number[])=>{const sum=v.reduce((a,b)=>a+b,0)||1;return v.map(n=>n/sum)};
 // Rotation-invariant uniform local binary patterns at two radii. No material
 // properties are inferred from these pixel distributions.
-export function pixelDescriptor(data:Uint8ClampedArray,w:number,h:number):Descriptor {
+export function pixelDescriptor(data:Uint8ClampedArray,w:number,h:number,mask?:Uint8Array):Descriptor {
  const color=Array(64).fill(0),texture=Array(16).fill(0),patterns=[Array(10).fill(0),Array(10).fill(0)];
  const gray=new Float32Array(w*h);
  for(let i=0;i<w*h;i++)gray[i]=.299*data[i*4]+.587*data[i*4+1]+.114*data[i*4+2];
  for(let y=3;y<h-3;y++)for(let x=3;x<w-3;x++){
   const p=y*w+x,i=p*4,r=data[i],g=data[i+1],b=data[i+2];
-  const weight=Math.min(r,g,b)>240?.15:1;
+  if(mask&&!mask[p])continue;
+  const weight=1;
   color[(r>>6)*16+(g>>6)*4+(b>>6)]+=weight;
+  // Avoid treating the removed background boundary as material texture.
+  if(mask&&[-3*w-3,-3*w, -3*w+3,-3,3,3*w-3,3*w,3*w+3].some(o=>!mask[p+o]))continue;
   const gradient=(Math.abs(gray[p+1]-gray[p-1])+Math.abs(gray[p+w]-gray[p-w]))/2;
   texture[Math.min(15,Math.floor(gradient/16))]+=weight;
   [1,3].forEach((radius,scale)=>{
